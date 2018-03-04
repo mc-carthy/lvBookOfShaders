@@ -1,16 +1,17 @@
 local singleColour = require("src.love.singleColour")
 local sineWave = require("src.love.sineWave")
+local screenSpaceVary = require("src.love.screenSpaceVary")
 
 function love.load()
-    sineWave.load()
+    screenSpaceVary.load()
 end
 
 function love.update(dt)
-    sineWave.update(dt)
+    screenSpaceVary.update(dt)
 end
 
 function love.draw()
-    sineWave.draw()
+    screenSpaceVary.draw()
 end
 
 function love.keypressed(key)
