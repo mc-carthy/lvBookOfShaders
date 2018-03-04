@@ -1,17 +1,20 @@
 local singleColour = require("src.love.singleColour")
 local sineWave = require("src.love.sineWave")
 local screenSpaceVary = require("src.love.screenSpaceVary")
+local linearSmoothing = require("src.love.linearSmoothing")
+
+local shader = linearSmoothing
 
 function love.load()
-    screenSpaceVary.load()
+    shader.load()
 end
 
 function love.update(dt)
-    screenSpaceVary.update(dt)
+    shader.update(dt)
 end
 
 function love.draw()
-    screenSpaceVary.draw()
+    shader.draw()
 end
 
 function love.keypressed(key)
