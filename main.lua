@@ -2,8 +2,9 @@ local singleColour = require("src.love.singleColour")
 local sineWave = require("src.love.sineWave")
 local screenSpaceVary = require("src.love.screenSpaceVary")
 local linearSmoothing = require("src.love.linearSmoothing")
+local quadraticSmoothing = require("src.love.quadraticSmoothing")
 
-local shader = linearSmoothing
+local shader = quadraticSmoothing
 
 function love.load()
     shader.load()
