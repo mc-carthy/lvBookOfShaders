@@ -1,15 +1,15 @@
+local singleColour = require("src.love.singleColour")
+
 function love.load()
-    myShader = love.graphics.newShader("src/singleColour.glsl")
+    singleColour.load()
 end
 
 function love.update(dt)
-
+    singleColour.update()
 end
 
 function love.draw()
-    love.graphics.setShader(myShader)
-    love.graphics.rectangle("fill", 50, 50, 200, 200)
-    love.graphics.setShader()
+    singleColour.draw()
 end
 
 function love.keypressed(key)
