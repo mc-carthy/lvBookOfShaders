@@ -1,15 +1,16 @@
 local singleColour = require("src.love.singleColour")
+local sineWave = require("src.love.sineWave")
 
 function love.load()
-    singleColour.load()
+    sineWave.load()
 end
 
 function love.update(dt)
-    singleColour.update()
+    sineWave.update(dt)
 end
 
 function love.draw()
-    singleColour.draw()
+    sineWave.draw()
 end
 
 function love.keypressed(key)
