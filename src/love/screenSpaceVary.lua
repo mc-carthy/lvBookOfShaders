@@ -7,7 +7,9 @@ screenSpaceVary.load = function()
 end
 
 screenSpaceVary.update = function(dt)
-
+    local mouse_x, mouse_y = love.mouse.getPosition()
+    myShader:send("mouse_x", mouse_x)
+    myShader:send("mouse_y", mouse_y)
 end
 
 screenSpaceVary.draw = function()
