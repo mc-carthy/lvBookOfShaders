@@ -6,7 +6,7 @@ local quadraticSmoothing = require("src.love.quadraticSmoothing")
 local step = require("src.love.step")
 local smoothStep = require("src.love.smoothStep")
 
-local shader = step
+local shader = smoothStep
 
 function love.load()
     shader.load()
