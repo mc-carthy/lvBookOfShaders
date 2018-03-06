@@ -4,6 +4,7 @@ local screenSpaceVary = require("src.love.screenSpaceVary")
 local linearSmoothing = require("src.love.linearSmoothing")
 local quadraticSmoothing = require("src.love.quadraticSmoothing")
 local step = require("src.love.step")
+local smoothStep = require("src.love.smoothStep")
 
 local shader = step
 
