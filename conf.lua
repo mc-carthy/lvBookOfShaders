@@ -1,7 +1,7 @@
 function love.conf(t)
     t.window.width = 800
     t.window.height = 600
-    t.window.title = 'LÖVE Book of Shaders'
+    t.window.title = 'LÖVEShaders'
     t.window.icon = nil
 
     t.modules.audio = true
