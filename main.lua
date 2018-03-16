@@ -9,8 +9,9 @@ local trig = require("src.love.trig")
 local colourMix = require("src.love.colourMix")
 local colourShaping = require("src.love.colourShaping")
 local colourHsv = require("src.love.colourHsv")
+local colourHsvPolar = require("src.love.colourHsvPolar")
 
-local shader = colourHsv
+local shader = colourHsvPolar
 
 function love.load()
     shader.load()
