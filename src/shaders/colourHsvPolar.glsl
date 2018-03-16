@@ -42,7 +42,7 @@ vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords){
 
     vec2 toCentre = vec2(0.5) - st;
     float angle = atan(toCentre.y, toCentre.x);
-    angle += sin(time);
+    angle += time;
     float radius = length(toCentre) * 2.0;
 
     colour = hsvToRgb(vec3((angle / twoPI) + 0.5, radius, 1.0));
