@@ -7,8 +7,9 @@ local step = require("src.love.step")
 local smoothStep = require("src.love.smoothStep")
 local trig = require("src.love.trig")
 local colourMix = require("src.love.colourMix")
+local colourShaping = require("src.love.colourShaping")
 
-local shader = colourMix
+local shader = colourShaping
 
 function love.load()
     shader.load()
