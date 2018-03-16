@@ -1,4 +1,4 @@
-// extern number time;
+extern number time;
 extern vec2 resolution;
 
 float PI = 3.14159;
@@ -15,15 +15,15 @@ vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords){
     vec3 pct = vec3(st.x);
 
     pct.r = smoothstep(0.0, 1.0, st.x);
-    pct.g = sin(st.x * PI);
+    pct.g = sin(st.x * PI + time) * 0.5 + 0.5;
     pct.b = pow(st.x,0.5);
 
     colour = mix(colourA, colourB, pct);
 
     // Plot transition lines for each channel
-    colour = mix(colour,vec3(1.0,0.0,0.0),plot(st, pct.r));
-    colour = mix(colour,vec3(0.0,1.0,0.0),plot(st, pct.g));
-    colour = mix(colour,vec3(0.0,0.0,1.0),plot(st, pct.b));
+    // colour = mix(colour,vec3(1.0,0.0,0.0),plot(st, pct.r));
+    // colour = mix(colour,vec3(0.0,1.0,0.0),plot(st, pct.g));
+    // colour = mix(colour,vec3(0.0,0.0,1.0),plot(st, pct.b));
     
     return vec4(colour, 1.0);
 }

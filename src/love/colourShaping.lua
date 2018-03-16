@@ -9,7 +9,7 @@ end
 
 function colourShaping.update(dt)
     time = time + dt
-    -- myShader:send("time", time)
+    myShader:send("time", time)
 end
 
 function colourShaping.draw()
