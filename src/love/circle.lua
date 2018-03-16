@@ -9,7 +9,7 @@ end
 
 function circle.update(dt)
     time = time + dt
-    -- myShader:send("time", time)
+    myShader:send("time", time)
 end
 
 function circle.draw()
