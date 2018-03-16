@@ -11,8 +11,9 @@ local colourShaping = require("src.love.colourShaping")
 local colourHsv = require("src.love.colourHsv")
 local colourHsvPolar = require("src.love.colourHsvPolar")
 local rectangle = require("src.love.rectangle")
+local circle = require("src.love.circle")
 
-local shader = rectangle
+local shader = circle
 
 function love.load()
     shader.load()
