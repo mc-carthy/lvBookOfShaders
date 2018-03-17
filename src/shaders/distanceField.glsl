@@ -19,4 +19,7 @@ vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords){
     vec3 colour = mix(colourA, colourB, d);
     
     return vec4(vec3(fract(d * 7.5)) * colour, 1.0);
+    // return vec4(vec3(step(0.3, d)), 1.0);
+    // return vec4(vec3(step(0.3, d) * step(d, 0.4)), 1.0);
+    // return vec4(vec3(smoothstep(0.3, 0.4, d) * smoothstep(0.6, 0.5, d)), 1.0);
 }

@@ -14,8 +14,9 @@ local rectangle = require("src.love.rectangle")
 local circle = require("src.love.circle")
 local circleDot = require("src.love.circleDot")
 local distanceField = require("src.love.distanceField")
+local polar = require("src.love.polar")
 
-local shader = distanceField
+local shader = polar
 
 function love.load()
     shader.load()
