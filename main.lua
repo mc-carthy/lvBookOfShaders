@@ -17,8 +17,9 @@ local distanceField = require("src.love.distanceField")
 local polar = require("src.love.polar")
 local polygon = require("src.love.polygon")
 local translation = require("src.love.translation")
+local rotation = require("src.love.rotation")
 
-local shader = translation
+local shader = rotation
 
 function love.load()
     shader.load()
