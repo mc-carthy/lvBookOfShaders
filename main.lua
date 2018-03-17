@@ -16,8 +16,9 @@ local circleDot = require("src.love.circleDot")
 local distanceField = require("src.love.distanceField")
 local polar = require("src.love.polar")
 local polygon = require("src.love.polygon")
+local translation = require("src.love.translation")
 
-local shader = polygon
+local shader = translation
 
 function love.load()
     shader.load()
