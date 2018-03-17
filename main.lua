@@ -18,8 +18,9 @@ local polar = require("src.love.polar")
 local polygon = require("src.love.polygon")
 local translation = require("src.love.translation")
 local rotation = require("src.love.rotation")
+local scale = require("src.love.scale")
 
-local shader = rotation
+local shader = scale
 
 function love.load()
     shader.load()
